@@ -5,6 +5,8 @@ import Footer from './Footer';
 import NewsLetter from './NewsLetter';
 import hrefIconLink from './hrefIconLink';
 import Who from './Who';
+import Card from './Card';
+import Libraries from './Libraries';
 
 export {
   Container,
@@ -14,4 +16,6 @@ export {
   NewsLetter,
   hrefIconLink,
   Who,
+  Card,
+  Libraries,
 };
