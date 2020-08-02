@@ -1,10 +1,13 @@
-import { Box } from '@chakra-ui/core';
-import { Hero, Footer } from '../components';
+import { Box, Flex } from '@chakra-ui/core';
+import { Hero, Footer, NewsLetter } from '../components';
 
 const Index = () => (
   <Box as="main">
     <Hero />
-    <Footer />
+    <Flex justifyContent="center" flexDirection="column">
+      <NewsLetter />
+      <Footer />
+    </Flex>
   </Box>
 );
 
