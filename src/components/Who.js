@@ -1,5 +1,4 @@
 import {
-  Stack,
   Heading,
   Box,
   Avatar,
@@ -10,7 +9,6 @@ import {
 } from '@chakra-ui/core';
 import { AiFillLinkedin, AiOutlineTwitter } from 'react-icons/ai';
 import Container from './Container';
-// import CheckMark from './CheckMark';
 import HrefIconLink from './hrefIconLink';
 
 const Who = () => (
@@ -27,11 +25,13 @@ const Who = () => (
           implement in the up coming projects and will you know one? Will try
           and add it to the list
         </Box>
-        <Link href="mailto:pranavkp.me@outlook.com?subject=libraries.now.sh&body=package%20name%3A-%0D%0Agithub%20link%3A-%0D%0Awebsite%3A-">
-          <Button leftIcon="email" variantColor="red" variant="solid">
-            Email Me
-          </Button>
-        </Link>
+        <Box textAlign={['center', 'center', 'left', 'left']}>
+          <Link href="mailto:pranavkp.me@outlook.com?subject=libraries.now.sh&body=package%20name%3A-%0D%0Agithub%20link%3A-%0D%0Awebsite%3A-">
+            <Button leftIcon="email" variantColor="red" variant="solid">
+              Email Me
+            </Button>
+          </Link>
+        </Box>
       </Box>
       <Box textAlign="center">
         <Box>

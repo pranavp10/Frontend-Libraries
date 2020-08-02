@@ -14,7 +14,7 @@ const Card = ({ githubLink, website, icon, name, path, color, size }) => {
           borderColor="gray.300"
           width="100%"
           bg="white"
-          borderRadius="sm"
+          borderRadius="lg"
         >
           <Flex alignItems="center">
             <Image src={path} mr={4} size={size} />
@@ -63,7 +63,7 @@ const Card = ({ githubLink, website, icon, name, path, color, size }) => {
         borderColor="gray.300"
         width="100%"
         bg="white"
-        borderRadius="sm"
+        borderRadius="lg"
       >
         <Flex alignItems="center">
           <Box as={icon} size={size} color={color} mr={4} />
