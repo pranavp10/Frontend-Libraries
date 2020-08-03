@@ -1,9 +1,10 @@
 import { Flex } from '@chakra-ui/core';
-import { Framework } from './List';
+import { Framework, UiLibrary } from './List';
 
 const Libraries = () => (
-  <Flex bg="#eeeef2" wrap="true">
+  <Flex bg="#eeeef2" wrap="true" direction="column">
     <Framework />
+    <UiLibrary />
   </Flex>
 );
 export default Libraries;

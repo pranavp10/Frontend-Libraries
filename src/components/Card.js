@@ -1,105 +1,59 @@
-import { Box, Heading, Flex, Link, Image } from '@chakra-ui/core';
+import { Box, Heading, Flex, Link, Avatar } from '@chakra-ui/core';
 import { AiFillGithub } from 'react-icons/ai';
 import { FiExternalLink } from 'react-icons/fi';
 import PropTypes from 'prop-types';
+import { FaCheckCircle } from 'react-icons/fa';
+import { MdCancel } from 'react-icons/md';
 
-const Card = ({ githubLink, website, icon, name, path, color, size }) => {
-  if (path) {
-    return (
-      <Flex wrap="wrap" justify="center">
-        <Box
-          m={2}
-          p={2}
-          borderWidth="1px"
-          borderColor="gray.300"
-          width="100%"
-          bg="white"
-          borderRadius="lg"
-        >
-          <Flex alignItems="center">
-            <Image src={path} mr={4} size={size} />
-            <Flex flexDirection="column">
-              <Heading as="h4" size="lg">
-                {name}
-              </Heading>
-              <Flex>
-                {githubLink && (
-                  <Link
-                    href={githubLink}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <Box as={AiFillGithub} size="18px" color="gray.900" m={1} />
-                  </Link>
-                )}
-                {website && (
-                  <Link
-                    href={website}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <Box
-                      as={FiExternalLink}
-                      size="18px"
-                      color="gray.900"
-                      m={1}
-                    />
-                  </Link>
-                )}
-              </Flex>
-            </Flex>
-          </Flex>
-        </Box>
-      </Flex>
-    );
-  }
-
-  return (
-    <Flex wrap="wrap" justify="center">
-      <Box
-        m={2}
-        p={2}
-        borderWidth="1px"
-        borderColor="gray.300"
-        width="100%"
-        bg="white"
-        borderRadius="lg"
-      >
-        <Flex alignItems="center">
-          <Box as={icon} size={size} color={color} mr={4} />
-          <Flex flexDirection="column">
-            <Heading as="h4" size="lg">
-              {name}
-            </Heading>
-            <Flex>
-              {githubLink && (
-                <Link
-                  href={githubLink}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <Box as={AiFillGithub} size="18px" color="gray.900" m={1} />
-                </Link>
-              )}
-              {website && (
-                <Link href={website} target="_blank" rel="noopener noreferrer">
-                  <Box as={FiExternalLink} size="18px" color="gray.900" m={1} />
-                </Link>
-              )}
-            </Flex>
+const Card = ({ githubLink, website, name, path, tried }) => (
+  <Flex wrap="wrap" justify="center">
+    <Box
+      m={2}
+      p={2}
+      borderWidth="1px"
+      borderColor="gray.300"
+      width="100%"
+      bg="white"
+      borderRadius="lg"
+    >
+      <Flex alignItems="center">
+        <Avatar name={name} src={path} mr={4} bg="white" />
+        <Flex flexDirection="column">
+          <Heading as="h4" size="lg">
+            {name}{' '}
+            {tried ? (
+              <Box
+                display="inline"
+                as={FaCheckCircle}
+                size="15px"
+                color="green.400"
+              />
+            ) : (
+              <Box display="inline" as={MdCancel} size="18px" color="red.500" />
+            )}
+          </Heading>
+          <Flex>
+            {githubLink && (
+              <Link href={githubLink} target="_blank" rel="noopener noreferrer">
+                <Box as={AiFillGithub} size="18px" color="gray.900" m={1} />
+              </Link>
+            )}
+            {website && (
+              <Link href={website} target="_blank" rel="noopener noreferrer">
+                <Box as={FiExternalLink} size="18px" color="gray.900" m={1} />
+              </Link>
+            )}
           </Flex>
         </Flex>
-      </Box>
-    </Flex>
-  );
-};
+      </Flex>
+    </Box>
+  </Flex>
+);
 Card.propTypes = {
   githubLink: PropTypes.string,
   name: PropTypes.string,
   website: PropTypes.string,
-  icon: PropTypes.node,
   path: PropTypes.string,
-  color: PropTypes.string,
-  size: PropTypes.string,
+  tried: PropTypes.bool,
 };
 export default Card;
