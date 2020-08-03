@@ -34,6 +34,34 @@ const UiLibraryData = [
     path: 'icons/grommet.png',
     tried: false,
   },
+  {
+    githubLink: 'https://github.com/rebassjs/rebass',
+    website: 'https://rebassjs.org/',
+    name: 'Rebass',
+    path: 'icons/rebass.png',
+    tried: false,
+  },
+  {
+    githubLink: 'https://github.com/Semantic-Org/Semantic-UI-React',
+    website: 'https://react.semantic-ui.com/',
+    name: 'Semantic',
+    path: 'icons/semantic.png',
+    tried: false,
+  },
+  {
+    githubLink: 'https://github.com/palantir/blueprint',
+    website: 'https://blueprintjs.com/',
+    name: 'Blueprint',
+    path: 'icons/blueprintjs.png',
+    tried: false,
+  },
+  {
+    githubLink: 'https://github.com/segmentio/evergreen',
+    website: 'https://evergreen.segment.com/',
+    name: 'Evergreen',
+    path: 'icons/evergreen.jpeg',
+    tried: false,
+  },
 ];
 
 export { UiLibraryData };
