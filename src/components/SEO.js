@@ -3,13 +3,13 @@ import { NextSeo } from 'next-seo';
 const SEO = () => (
   <NextSeo
     title="Frontend Libraries"
-    description="It will help you setup the Development environment which will keep the personal and Development Directory different so that you can work fearlessly."
+    description="Best Frontend Libraries which has been used by big tech company for the production like facebook,Google,Microsoft and may more."
     canonical="https://libraries.now.sh/"
     openGraph={{
       url: 'https://libraries.now.sh/',
       title: 'Frontend Libraries',
       description:
-        'It will help you setup the Development environment which will keep the personal and Development Directory different so that you can work fearlessly.',
+        'Best Frontend Libraries which has been used by big tech company for the production like facebook,Google,Microsoft and may more.',
       images: [
         {
           url: 'https://libraries.now.sh/shareSEO.png',
