@@ -15,7 +15,7 @@ const Hero = () => (
             fontWeight="bold"
             color="gray.100"
           >
-            Frontend library
+            Frontend Libraries
           </Heading>
           <Box color="gray.100" mb={4} fontSize="lg">
             These are the frontend library that i have been used till the date

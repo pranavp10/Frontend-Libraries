@@ -7,6 +7,7 @@ import hrefIconLink from './hrefIconLink';
 import Who from './Who';
 import Card from './Card';
 import Libraries from './Libraries';
+import SEO from './SEO';
 
 export {
   Container,
@@ -18,4 +19,5 @@ export {
   Who,
   Card,
   Libraries,
+  SEO,
 };
