@@ -1,4 +1,3 @@
-/* eslint-disable no-sparse-arrays */
 import Card from '../Card';
 import ListContainer from './ListContainer';
 import { UiLibraryData } from '../../json/ui-library';

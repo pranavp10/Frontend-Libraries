@@ -15,6 +15,7 @@ const Card = ({ githubLink, website, name, path, tried }) => (
       width="100%"
       bg="white"
       borderRadius="lg"
+      boxShadow="lg"
     >
       <Flex alignItems="center">
         <Avatar name={name} src={path} mr={4} bg="white" />
