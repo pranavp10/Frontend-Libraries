@@ -4,8 +4,8 @@ import { UiLibraryData } from '../../json/ui-library';
 
 const UiLibrary = () => (
   <ListContainer heading="UI Library">
-    {UiLibraryData.map(data => (
-      <Card {...data} />
+    {UiLibraryData.map((data, index) => (
+      <Card {...data} key={index} />
     ))}
   </ListContainer>
 );

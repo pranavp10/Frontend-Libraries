@@ -4,6 +4,7 @@ import UiLibrary from './ui-library';
 import CssInJs from './css-in-js';
 import StateManagement from './StateManagement';
 import ReactDataFetching from './ReactDataFetching';
+import Fetchers from './Fetchers';
 
 export {
   Framework,
@@ -12,4 +13,5 @@ export {
   CssInJs,
   StateManagement,
   ReactDataFetching,
+  Fetchers,
 };

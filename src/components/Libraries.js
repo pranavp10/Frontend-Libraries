@@ -5,11 +5,13 @@ import {
   CssInJs,
   StateManagement,
   ReactDataFetching,
+  Fetchers,
 } from './List';
 
 const Libraries = () => (
   <Flex bg="#eeeef2" wrap="true" direction="column">
     <Framework />
+    <Fetchers />
     <StateManagement />
     <ReactDataFetching />
     <CssInJs />

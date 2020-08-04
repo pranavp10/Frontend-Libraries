@@ -4,8 +4,8 @@ import { FrameworkData } from '../../json/Framework';
 
 const Framework = () => (
   <ListContainer heading="Framework">
-    {FrameworkData.map(data => (
-      <Card {...data} />
+    {FrameworkData.map((data, index) => (
+      <Card {...data} key={index} />
     ))}
   </ListContainer>
 );

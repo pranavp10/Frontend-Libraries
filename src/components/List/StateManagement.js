@@ -4,8 +4,8 @@ import { StateManagementData } from '../../json/StateManagement';
 
 const StateManagement = () => (
   <ListContainer heading="State Management">
-    {StateManagementData.map(data => (
-      <Card {...data} />
+    {StateManagementData.map((data, index) => (
+      <Card {...data} key={index} />
     ))}
   </ListContainer>
 );

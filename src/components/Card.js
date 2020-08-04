@@ -18,7 +18,13 @@ const Card = ({ githubLink, website, name, path, tried }) => (
       boxShadow="lg"
     >
       <Flex alignItems="center">
-        <Avatar name={name} src={path} mr={4} bg="white" />
+        <Avatar
+          name={name}
+          src={path}
+          mr={4}
+          bg={path ? 'white' : 'black'}
+          color={path ? 'black' : 'white'}
+        />
         <Flex flexDirection="column">
           <Heading as="h4" size="lg">
             {name}{' '}

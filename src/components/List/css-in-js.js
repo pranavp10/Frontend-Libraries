@@ -4,8 +4,8 @@ import { CssInJsData } from '../../json/css-in-js';
 
 const CssInJs = () => (
   <ListContainer heading="CSS in JS">
-    {CssInJsData.map(data => (
-      <Card {...data} />
+    {CssInJsData.map((data, index) => (
+      <Card {...data} key={index} />
     ))}
   </ListContainer>
 );
