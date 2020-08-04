@@ -44,8 +44,8 @@ const Who = () => (
         </Text>
         <Text color="gray.500" mb={5} maxW={300}>
           JavaScript, React, Design Systems, a software engineer by passion,
-          loves solving problems. Most loved thing in js is the closer property,
-          figuring out life's purpose.
+          loves solving problems. Most loved thing in js is the closure
+          property, figuring out life's purpose.
         </Text>
         <Flex justifyContent="center">
           <HrefIconLink
