@@ -6,6 +6,7 @@ import {
   StateManagement,
   ReactDataFetching,
   Fetchers,
+  Document,
 } from './List';
 
 const Libraries = () => (
@@ -16,6 +17,7 @@ const Libraries = () => (
     <ReactDataFetching />
     <CssInJs />
     <UiLibrary />
+    <Document />
   </Flex>
 );
 export default Libraries;
