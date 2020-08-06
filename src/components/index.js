@@ -8,6 +8,7 @@ import Who from './Who';
 import Card from './Card';
 import Libraries from './Libraries';
 import SEO from './SEO';
+import Why from './Why';
 
 export {
   Container,
@@ -20,4 +21,5 @@ export {
   Card,
   Libraries,
   SEO,
+  Why,
 };
