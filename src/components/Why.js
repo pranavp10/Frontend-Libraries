@@ -1,8 +1,6 @@
 import { Heading, Stack, Box, Flex } from '@chakra-ui/core';
 import CheckMark from './CheckMark';
 import Container from './Container';
-import SubHeading from './SubHeading';
-import SubHeadingText from './SubHeadingText';
 
 const Why = () => (
   <Flex justifyContent="center" flexDirection="column">

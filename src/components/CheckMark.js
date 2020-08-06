@@ -1,14 +1,13 @@
 import { Stack, Box, Heading } from '@chakra-ui/core';
 import { IoMdCheckmarkCircleOutline } from 'react-icons/io';
 import PropTypes from 'prop-types';
-import { FaCheckCircle } from 'react-icons/fa';
-import { MdCancel } from 'react-icons/md';
+import { MdCancel, MdCheckCircle } from 'react-icons/md';
 
 const CheckMark = ({ text, tried }) => (
   <Stack isInline mb={2}>
     <Box
-      as={tried ? FaCheckCircle : MdCancel}
-      size={tried ? '24px' : '28px'}
+      as={tried ? MdCheckCircle : MdCancel}
+      size="24px"
       color={tried ? 'green.400' : 'red.500'}
       mr={0}
     />

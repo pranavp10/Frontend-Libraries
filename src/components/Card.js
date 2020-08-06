@@ -12,7 +12,7 @@ const Card = ({ githubLink, website, name, path, tried }) => (
       p={2}
       borderWidth="1px"
       borderColor="gray.300"
-      width="100%"
+      width={['90%', '100%', '100%', '100%']}
       bg="white"
       borderRadius="lg"
       boxShadow="lg"
