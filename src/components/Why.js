@@ -15,7 +15,7 @@ const Why = () => (
           I have mad this list.
         </Box>
         <Stack mt={[0, 0, 8]} mb={[0, 0, 8]}>
-          <CheckMark text="Good Understanding & Used in Production" tried />
+          <CheckMark text="Used in Production" tried />
           <CheckMark text="Still need to learn & try" />
         </Stack>
       </Box>

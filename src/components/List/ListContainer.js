@@ -17,7 +17,12 @@ const ListContainer = ({ children, heading }) => (
     <Grid
       width="100%"
       p={0}
-      templateColumns="repeat(auto-fill, minmax(360px, 1fr))"
+      templateColumns={[
+        'repeat(auto-fill, minmax(270px, 1fr))',
+        'repeat(auto-fill, minmax(360px, 1fr))',
+        'repeat(auto-fill, minmax(360px, 1fr))',
+        'repeat(auto-fill, minmax(360px, 1fr))',
+      ]}
       justifyContent="flex-start"
     >
       {children}
