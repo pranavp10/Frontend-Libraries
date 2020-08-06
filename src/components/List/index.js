@@ -6,6 +6,7 @@ import StateManagement from './StateManagement';
 import ReactDataFetching from './ReactDataFetching';
 import Fetchers from './Fetchers';
 import Document from './Document';
+import Notes from './Notes';
 
 export {
   Framework,
@@ -16,4 +17,5 @@ export {
   ReactDataFetching,
   Fetchers,
   Document,
+  Notes,
 };

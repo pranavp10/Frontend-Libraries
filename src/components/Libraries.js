@@ -7,6 +7,7 @@ import {
   ReactDataFetching,
   Fetchers,
   Document,
+  Notes,
 } from './List';
 
 const Libraries = () => (
@@ -18,6 +19,7 @@ const Libraries = () => (
     <CssInJs />
     <UiLibrary />
     <Document />
+    <Notes />
   </Flex>
 );
 export default Libraries;
