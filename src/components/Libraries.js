@@ -1,4 +1,4 @@
-import { Flex, Tag } from '@chakra-ui/core';
+import { Flex, Tag, Heading } from '@chakra-ui/core';
 import {
   Framework,
   UiLibrary,

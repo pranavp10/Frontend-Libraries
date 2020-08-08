@@ -18,8 +18,8 @@ const Hero = () => (
             Frontend Libraries
           </Heading>
           <Box color="gray.100" mb={4} fontSize="lg" maxW={300}>
-            Best Frontend Libraries which has been used by folks working at
-            facebook,Google,Microsoft and may more.
+            Best Frontend Libraries which are used by professionals working at
+            facebook, Google, Microsoft and many other top companies.
           </Box>
         </Box>
         <Box>

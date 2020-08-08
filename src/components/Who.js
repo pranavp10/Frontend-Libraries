@@ -21,9 +21,10 @@ const Who = () => (
           packages ?
         </Heading>
         <Box color="gray.700" mb={4} fontSize="lg" maxW={400}>
-          I will always starving for trying new npm packages so that I can
-          implement in the up coming projects and will you know one? Will try
-          and add it to the list
+          I am always starving to try out new npm packages so that I can
+          implement those in my up coming projects. Do you know any other
+          packages that I could try out? Hit me up, let's discuss and will try
+          to add it in the list.
         </Box>
         <Box textAlign={['center', 'center', 'left', 'left']}>
           <Link href="mailto:pranavkp.me@outlook.com?subject=libraries.now.sh&body=package%20name%3A-%0D%0Agithub%20link%3A-%0D%0Awebsite%3A-">
