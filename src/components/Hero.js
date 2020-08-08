@@ -17,8 +17,9 @@ const Hero = () => (
           >
             Frontend Libraries
           </Heading>
-          <Box color="gray.100" mb={4} fontSize="lg">
-            These are the frontend library that i have been used till the date
+          <Box color="gray.100" mb={4} fontSize="lg" maxW={300}>
+            Best Frontend Libraries which has been used by folks working at
+            facebook,Google,Microsoft and may more.
           </Box>
         </Box>
         <Box>

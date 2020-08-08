@@ -7,12 +7,13 @@ const Why = () => (
     <Container flexDirection="column" justifyContent>
       <Box>
         <Heading as="h1" size="2xl" lineHeight={1} color="gray.900">
-          Why This Path?
+          Why This Packages?
         </Heading>
         <Box color="gray.700" mb={4} fontSize="lg" maxW={400}>
-          The reason i have developed this path is because after lots of
-          research and asking all the senior dev and the community based on that
-          I have mad this list.
+          These Packages are the one of most Used in the Production, the reason
+          we have is created this list is I wanted to share is because when i
+          was searching I was unable to find all the Packages at one place so I
+          got the thought and created it
         </Box>
         <Stack mt={[0, 0, 8]} mb={[0, 0, 8]}>
           <CheckMark text="Used in Production" tried />
