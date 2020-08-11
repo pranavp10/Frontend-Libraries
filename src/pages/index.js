@@ -13,7 +13,7 @@ import {
 const Index = () => (
   <>
     <SEO />
-    <Box as="main">
+    <Box as="main" bg="#fff" color="black">
       <Hero />
       <Why />
       <Libraries />
