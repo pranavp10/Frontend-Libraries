@@ -1,7 +1,17 @@
 {
-  "name": "with-chakra-ui",
+  "name": "libraries.now.sh",
   "version": "0.1.0",
   "private": false,
+  "author": {
+    "name": "Pranav Patel",
+    "email": "pranavkp.me@outlook.com",
+    "url": "https://devenv.now.sh"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pranavp10/libraries.now.sh.git"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
