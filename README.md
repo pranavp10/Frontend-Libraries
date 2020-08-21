@@ -35,7 +35,7 @@ Contributions are what make the open source community such an amazing place to b
 ### Add New Library
 
 1. Upload the icons to public/icons
-2. Create your add Library Branch (`git checkout -b Library/Name`)
+2. Add Library Branch (`git checkout -b Library/Name`)
 3. Commit your Changes (`git commit -m 'comment'`)
 4. Push to the Branch (`git push origin Library/Name`)
 5. Open a Pull Request
