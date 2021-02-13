@@ -11,8 +11,8 @@
       "@/lib/*": [
         "src/lib/*"
       ],
-      "@/utils/*": [
-        "src/utils/*"
+      "@/data/*": [
+        "src/data/*"
       ],
       "@/globalState/*": [
         "src/globalState/*"
