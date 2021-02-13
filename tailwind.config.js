@@ -1,6 +1,10 @@
 module.exports = {
-  purge: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
-  darkMode: false, // or 'media' or 'class'
+  purge: ['./src/pages/**/*.js', './src/components/**/*.js', './src/utils/getTint.js'],
+  future: {
+    removeDeprecatedGapUtilities: true,
+    purgeLayersByDefault: true,
+  },
+  darkMode: 'class',
   theme: {
     extend: {},
   },
@@ -8,4 +12,4 @@ module.exports = {
     extend: {},
   },
   plugins: [],
-}
+};
