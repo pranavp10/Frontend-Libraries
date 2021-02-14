@@ -1,6 +1,6 @@
-import Card from '../Card';
+import Card from '@/components/Card';
+import { CssInJsData } from '@/data/css-in-js';
 import ListContainer from './ListContainer';
-import { CssInJsData } from '../../json/css-in-js';
 
 const CssInJs = () => (
   <ListContainer heading="CSS in JS">

@@ -1,6 +1,6 @@
-import Card from '../Card';
+import Card from '@/components/Card';
+import { FrameworkData } from '@/data/Framework';
 import ListContainer from './ListContainer';
-import { FrameworkData } from '../../json/Framework';
 
 const Framework = () => (
   <ListContainer heading="Framework">

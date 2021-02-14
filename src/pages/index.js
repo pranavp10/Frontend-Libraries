@@ -1,28 +1,14 @@
 /* eslint-disable no-sparse-arrays */
-import { Box, Flex } from '@chakra-ui/core';
-import {
-  Hero,
-  Footer,
-  NewsLetter,
-  Who,
-  Libraries,
-  SEO,
-  Why,
-} from '../components';
+import { Hero, SEO, Why, Libraries, Who, Footer } from '../components';
 
 const Index = () => (
   <>
     <SEO />
-    <Box as="main" bg="#fff" color="black">
-      <Hero />
-      <Why />
-      <Libraries />
-      <Who />
-      <Flex justifyContent="center" flexDirection="column">
-        <NewsLetter />
-        <Footer />
-      </Flex>
-    </Box>
+    <Hero />
+    <Why />
+    <Libraries />
+    <Who />
+    <Footer />
   </>
 );
 

@@ -1,33 +1,11 @@
 /* eslint-disable no-sparse-arrays */
-import { Box, Grid, Heading } from '@chakra-ui/core';
 import PropTypes from 'prop-types';
 
 const ListContainer = ({ children, heading }) => (
-  <Box width={['100%', , '90%', '80%']} mx="auto" mt="2.5rem">
-    <Heading
-      px="5"
-      as="h3"
-      my="1rem"
-      fontSize={['22px', , , '24px']}
-      size="xl"
-      fontWeight="bold"
-    >
-      {heading}
-    </Heading>
-    <Grid
-      width="100%"
-      p={0}
-      templateColumns={[
-        'repeat(auto-fill, minmax(270px, 1fr))',
-        'repeat(auto-fill, minmax(360px, 1fr))',
-        'repeat(auto-fill, minmax(360px, 1fr))',
-        'repeat(auto-fill, minmax(360px, 1fr))',
-      ]}
-      justifyContent="flex-start"
-    >
-      {children}
-    </Grid>
-  </Box>
+  <div className="w-full max-w-5xl mx-auto mt-9">
+    <h6 className="p-4 my-4 text-3xl lg:text-4xl font-extrabold">{heading}</h6>
+    <div className="grid justify-start grid-cols-82">{children}</div>
+  </div>
 );
 ListContainer.propTypes = {
   children: PropTypes.node,

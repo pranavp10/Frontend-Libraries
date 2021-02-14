@@ -1,6 +1,6 @@
+import Card from '@/components/Card';
+import { DocumentationData } from '@/data/Document';
 import ListContainer from './ListContainer';
-import Card from '../Card';
-import { DocumentationData } from '../../json/Document';
 
 const Documentation = () => (
   <ListContainer heading="Document Each Component">

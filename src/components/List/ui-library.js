@@ -1,6 +1,6 @@
-import Card from '../Card';
+import Card from '@/components/Card';
+import { UiLibraryData } from '@/data/ui-library';
 import ListContainer from './ListContainer';
-import { UiLibraryData } from '../../json/ui-library';
 
 const UiLibrary = () => (
   <ListContainer heading="UI Library">

@@ -1,6 +1,6 @@
-import Card from '../Card';
+import Card from '@/components/Card';
+import { ReactDataFetchingData } from '@/data/ReactDataFetching';
 import ListContainer from './ListContainer';
-import { ReactDataFetchingData } from '../../json/ReactDataFetching';
 
 const ReactDataFetching = () => (
   <ListContainer heading="Data Fetching Hooks">

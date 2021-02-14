@@ -1,33 +1,24 @@
-import { Heading, Flex, Box, Image } from '@chakra-ui/core';
+import { DiNpm } from 'react-icons/di';
 import Container from './Container';
 import HeroContainer from './HeroContainer';
 
 const Hero = () => (
-  <Flex justifyContent="center" flexDirection="column" bg="#d04a49">
+  <div className="flex justify-center flex-col">
     <HeroContainer>
       <Container flexDirection="column">
-        <Box>
-          <Heading
-            letterSpacing="tight"
-            mb={4}
-            as="h1"
-            size="2xl"
-            fontWeight="bold"
-            color="gray.100"
-          >
-            Frontend Libraries
-          </Heading>
-          <Box color="gray.100" mb={4} fontSize="lg" maxW={300}>
-            Best Frontend Libraries which are used by professionals working at
-            facebook, Google, Microsoft and many other top companies.
-          </Box>
-        </Box>
-        <Box>
-          <Image src="box.svg" alt="Man standing with empty box" />
-        </Box>
+        <div>
+          <h1 className="text-5xl lg:text-6xl font-extrabold">Frontend Libraries</h1>
+          <div className="mt-4 text-xl text-gray-500 dark:text-gray-400 max-w-lg">
+            Best Frontend Libraries which are used by professionals working at facebook, Google,
+            Microsoft and many other top companies.
+          </div>
+        </div>
+        <div className="text-red-500">
+          <DiNpm size="300px" />
+        </div>
       </Container>
     </HeroContainer>
-  </Flex>
+  </div>
 );
 
 export default Hero;

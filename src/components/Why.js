@@ -1,36 +1,30 @@
-import { Heading, Stack, Box, Flex, List, ListItem } from '@chakra-ui/core';
 import CheckMark from './CheckMark';
-import Container from './Container';
 
 const Why = () => (
-  <Flex justifyContent="center" flexDirection="column">
-    <Container flexDirection="column" justifyContent>
-      <Box>
-        <Heading as="h1" size="2xl" lineHeight={1} color="gray.900" mb={5}>
-          Why These Packages?
-        </Heading>
-        <Box color="gray.700" mb={4} fontSize="lg">
-          <List styleType="decimal">
-            <ListItem>
-              These Packages are one of the most used packages in production.
-              The reason I've created and shared this list is because I wanted
-              to make it easy for everyone.
-            </ListItem>
-            <ListItem>
-              When I was searching for these, I was unable to find all the
-              packages at one place. That sparked a thought in me "Why not
-              create site where everything can be found in a single place? "
-              Awesome right? So this is where that thought landed.
-            </ListItem>
-          </List>
-        </Box>
-        <Stack mt={[0, 0, 8]} mb={[0, 0, 8]}>
+  <div className="flex justify-center flex-col">
+    <div className="flex max-w-5xl w-full p-8 mx-auto lg:my-8 flex-col lg:flex-row">
+      <div>
+        <h3 className="text-4xl font-extrabold mb-4">Why These Packages?</h3>
+        <div className="text-lg mb-4">
+          <ol className="list-decimal ml-4 font-medium text-gray-500 dark:text-gray-400 text-xl">
+            <li>
+              These Packages are one of the most used packages in production. The reason I've
+              created and shared this list is because I wanted to make it easy for everyone.
+            </li>
+            <li>
+              When I was searching for these, I was unable to find all the packages at one place.
+              That sparked a thought in me "Why not create site where everything can be found in a
+              single place? " Awesome right? So this is where that thought landed.
+            </li>
+          </ol>
+        </div>
+        <div className="space-y-2 mt-4">
           <CheckMark text="Used in Production" tried />
           <CheckMark text="Still need to learn & try" />
-        </Stack>
-      </Box>
-    </Container>
-  </Flex>
+        </div>
+      </div>
+    </div>
+  </div>
 );
 
 export default Why;

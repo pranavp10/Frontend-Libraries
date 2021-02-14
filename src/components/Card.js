@@ -1,60 +1,54 @@
-import { Box, Heading, Flex, Link, Avatar } from '@chakra-ui/core';
 import { AiFillGithub } from 'react-icons/ai';
 import { FiExternalLink } from 'react-icons/fi';
 import PropTypes from 'prop-types';
 import { FaCheckCircle } from 'react-icons/fa';
 import { MdCancel } from 'react-icons/md';
+import Image from 'next/image';
 
 const Card = ({ githubLink, website, name, path, tried }) => (
-  <Flex wrap="wrap" justify="center">
-    <Box
-      m={2}
-      p={2}
-      borderWidth="1px"
-      borderColor="gray.300"
-      width={['100%', '100%', '100%', '100%']}
-      bg="white"
-      borderRadius="lg"
-      boxShadow="lg"
-    >
-      <Flex alignItems="center">
-        <Avatar
-          name={name}
-          src={path}
-          mr={4}
-          bg={path ? 'white' : 'black'}
-          color={path ? 'black' : 'white'}
-        />
-        <Flex flexDirection="column">
-          <Heading as="h4" size="lg">
-            {name}{' '}
-            {tried ? (
-              <Box
-                display="inline"
-                as={FaCheckCircle}
-                size="15px"
-                color="green.400"
-              />
-            ) : (
-              <Box display="inline" as={MdCancel} size="18px" color="red.500" />
-            )}
-          </Heading>
-          <Flex>
+  <div className="flex flex-wrap justify-center">
+    <div className="m-2 p-2 border border-white w-full rounded-lg shadow-lg hover:shadow-xl transition duration-200 ease-in-out cursor-pointer transform hover:scale-105 motion-reduce:transform-none">
+      <div className="items-center flex space-x-4">
+        <Image className="rounded-full hover:p-2" src={`/${path}`} width={100} height={100} />
+        <div className="flex flex-col space-y-1">
+          <div className="flex justify-center items-center space-x-3">
+            <h4 className="text-3xl font-extrabold">{name}</h4>
+            <div>
+              {tried ? (
+                <div className="text-green-500 dark:text-green-400">
+                  <FaCheckCircle size="14px" />
+                </div>
+              ) : (
+                <div className="text-red-500 dark:text-red-400">
+                  <MdCancel size="16px" />
+                </div>
+              )}
+            </div>
+          </div>
+          <div className="flex space-x-2">
             {githubLink && (
-              <Link href={githubLink} target="_blank" rel="noopener noreferrer">
-                <Box as={AiFillGithub} size="18px" color="gray.900" m={1} />
-              </Link>
+              <a
+                href={githubLink}
+                className="text-gray-500 dark:text-gray-400 hover:text-black dark:hover:text-white"
+                target="_blank"
+                rel="noopener noreferrer">
+                <AiFillGithub size="20px" />
+              </a>
             )}
             {website && (
-              <Link href={website} target="_blank" rel="noopener noreferrer">
-                <Box as={FiExternalLink} size="18px" color="gray.900" m={1} />
-              </Link>
+              <a
+                href={website}
+                className="text-gray-500 dark:text-gray-400 hover:text-black dark:hover:text-white"
+                target="_blank"
+                rel="noopener noreferrer">
+                <FiExternalLink size="20px" />
+              </a>
             )}
-          </Flex>
-        </Flex>
-      </Flex>
-    </Box>
-  </Flex>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 );
 Card.propTypes = {
   githubLink: PropTypes.string,

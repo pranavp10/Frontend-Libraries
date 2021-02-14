@@ -1,6 +1,6 @@
+import Card from '@/components/Card';
+import { NotesData } from '@/data/Notes';
 import ListContainer from './ListContainer';
-import Card from '../Card';
-import { NotesData } from '../../json/Notes';
 
 const Notes = () => (
   <ListContainer heading="Note It down">

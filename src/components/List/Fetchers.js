@@ -1,6 +1,6 @@
-import Card from '../Card';
+import Card from '@/components/Card';
+import { FetchersData } from '@/data/Fetchers';
 import ListContainer from './ListContainer';
-import { FetchersData } from '../../json/Fetchers';
 
 const Fetchers = () => (
   <ListContainer heading="Fetchers">

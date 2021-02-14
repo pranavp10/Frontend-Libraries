@@ -1,6 +1,6 @@
-import Card from '../Card';
+import Card from '@/components/Card';
+import { StateManagementData } from '@/data/StateManagement';
 import ListContainer from './ListContainer';
-import { StateManagementData } from '../../json/StateManagement';
 
 const StateManagement = () => (
   <ListContainer heading="State Management">
