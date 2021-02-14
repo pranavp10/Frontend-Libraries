@@ -7,22 +7,41 @@ import Image from 'next/image';
 
 const Card = ({ githubLink, website, name, path, tried }) => (
   <div className="flex flex-wrap justify-center">
-    <div className="m-2 p-2 border w-full rounded-lg shadow-sm">
-      <div className="items-center">
-        <Image className="rounded-full" src={`/${path}`} width={24} height={24} />
-        <div className="flex flex-col">
-          <h4>
-            {name} {tried ? <FaCheckCircle size="24px" /> : <MdCancel size="24px" />}
-          </h4>
-          <div className="flex">
+    <div className="m-2 p-2 border border-white w-full rounded-lg shadow-lg hover:shadow-xl transition duration-200 ease-in-out cursor-pointer transform hover:scale-105 motion-reduce:transform-none">
+      <div className="items-center flex space-x-4">
+        <Image className="rounded-full hover:p-2" src={`/${path}`} width={100} height={100} />
+        <div className="flex flex-col space-y-1">
+          <div className="flex justify-center items-center space-x-3">
+            <h4 className="text-3xl font-extrabold">{name}</h4>
+            <div>
+              {tried ? (
+                <div className="text-green-500 dark:text-green-400">
+                  <FaCheckCircle size="14px" />
+                </div>
+              ) : (
+                <div className="text-red-500 dark:text-red-400">
+                  <MdCancel size="16px" />
+                </div>
+              )}
+            </div>
+          </div>
+          <div className="flex space-x-2">
             {githubLink && (
-              <a href={githubLink} target="_blank" rel="noopener noreferrer">
-                <AiFillGithub size="18px" />
+              <a
+                href={githubLink}
+                className="text-gray-500 dark:text-gray-400 hover:text-black dark:hover:text-white"
+                target="_blank"
+                rel="noopener noreferrer">
+                <AiFillGithub size="20px" />
               </a>
             )}
             {website && (
-              <a href={website} target="_blank" rel="noopener noreferrer">
-                <FiExternalLink size="18px" />
+              <a
+                href={website}
+                className="text-gray-500 dark:text-gray-400 hover:text-black dark:hover:text-white"
+                target="_blank"
+                rel="noopener noreferrer">
+                <FiExternalLink size="20px" />
               </a>
             )}
           </div>

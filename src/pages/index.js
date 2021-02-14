@@ -1,5 +1,5 @@
 /* eslint-disable no-sparse-arrays */
-import { Hero, SEO, Why, Libraries } from '../components';
+import { Hero, SEO, Why, Libraries, Who } from '../components';
 
 const Index = () => (
   <>
@@ -7,6 +7,7 @@ const Index = () => (
     <Hero />
     <Why />
     <Libraries />
+    <Who />
   </>
 );
 

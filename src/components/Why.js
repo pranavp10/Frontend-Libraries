@@ -2,11 +2,11 @@ import CheckMark from './CheckMark';
 
 const Why = () => (
   <div className="flex justify-center flex-col">
-    <div className="flex max-w-5xl justify-center w-full items-center p-8 mx-auto sm:my-8 flex-col sm:flex-row">
+    <div className="flex max-w-5xl w-full p-8 mx-auto lg:my-8 flex-col lg:flex-row">
       <div>
-        <h3 className="text-2xl text-gray-900 mb-4">Why These Packages?</h3>
-        <div className="text-lg text-gray-700 mb-4">
-          <ol className="list-decimal">
+        <h3 className="text-4xl font-extrabold mb-4">Why These Packages?</h3>
+        <div className="text-lg mb-4">
+          <ol className="list-decimal ml-4 font-medium text-gray-500 dark:text-gray-400 text-xl">
             <li>
               These Packages are one of the most used packages in production. The reason I've
               created and shared this list is because I wanted to make it easy for everyone.
@@ -18,7 +18,7 @@ const Why = () => (
             </li>
           </ol>
         </div>
-        <div className="space-y-8">
+        <div className="space-y-2 mt-4">
           <CheckMark text="Used in Production" tried />
           <CheckMark text="Still need to learn & try" />
         </div>

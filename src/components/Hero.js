@@ -1,20 +1,20 @@
-import Image from 'next/image';
+import { DiNpm } from 'react-icons/di';
 import Container from './Container';
 import HeroContainer from './HeroContainer';
 
 const Hero = () => (
-  <div className="flex justify-center flex-col bg-red-900">
+  <div className="flex justify-center flex-col">
     <HeroContainer>
       <Container flexDirection="column">
         <div>
-          <h1 className="text-2xl font-bold text-gray-500">Frontend Libraries</h1>
-          <div className="text-gray-500 mb-4 text-lg max-w-xs">
+          <h1 className="text-3xl lg:text-6xl font-extrabold">Frontend Libraries</h1>
+          <div className="mt-4 text-xl text-gray-500 dark:text-gray-400 max-w-lg">
             Best Frontend Libraries which are used by professionals working at facebook, Google,
             Microsoft and many other top companies.
           </div>
         </div>
-        <div>
-          <Image width={500} height={500} src="/box.svg" alt="Man standing with empty box" />
+        <div className="text-red-500">
+          <DiNpm size="300px" />
         </div>
       </Container>
     </HeroContainer>
