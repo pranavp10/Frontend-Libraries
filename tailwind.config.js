@@ -6,7 +6,11 @@ module.exports = {
   },
   darkMode: 'class',
   theme: {
-    extend: {},
+    extend: {
+      gridTemplateColumns: {
+        82: 'repeat(auto-fill, minmax(360px, 1fr))',
+      },
+    },
   },
   variants: {
     extend: {},
