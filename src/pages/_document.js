@@ -6,12 +6,11 @@ export default class Document extends NextDocument {
       <Html lang="en">
         <Head>
           <link
-            href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
-            rel="stylesheet"
-          />
-          <link
-            href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
-            rel="stylesheet"
+            rel="preload"
+            href="/inter-var-latin.woff2"
+            as="font"
+            type="font/woff2"
+            crossOrigin="anonymous"
           />
           <meta httpEquiv="ScreenOrientation" content="autoRotate:disabled" />
           <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />

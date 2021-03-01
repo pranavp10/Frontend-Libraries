@@ -12,7 +12,7 @@ const Card = ({ githubLink, website, name, path, tried }) => (
         <Image className="rounded-full hover:p-2" src={`/${path}`} width={100} height={100} />
         <div className="flex flex-col space-y-1">
           <div className="flex justify-center items-center space-x-3">
-            <h4 className="text-3xl font-extrabold">{name}</h4>
+            <p className="text-3xl font-extrabold">{name}</p>
             <div>
               {tried ? (
                 <div className="text-green-500 dark:text-green-400">
