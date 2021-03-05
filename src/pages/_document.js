@@ -27,7 +27,7 @@ export default class Document extends NextDocument {
           <meta content="#b6302f" name="msapplication-TileColor" />
           <meta content="/favicons/browserconfig.xml" name="msapplication-config" />
         </Head>
-        <body className="bg-white text-black dark:bg-black dark:text-white">
+        <body className="bg-white text-black dark:bg-gray-900 dark:text-white">
           <Main />
           <NextScript />
         </body>
