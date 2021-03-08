@@ -37,9 +37,7 @@ Contributions are what make the open source community such an amazing place to b
 3. Select the section you want to add the libary
 4. Modify the below object
 
-5.
-
- ```js
+5. ```js
     {
     githubLink: '',
     website: '',
@@ -49,7 +47,7 @@ Contributions are what make the open source community such an amazing place to b
     },
     ```
 
-1. Create a new branch (`git checkout -b Library/Name`)
-2. Commit your changes (`git commit -m 'add this new library'`)
-3. Push to the branch (`git push origin Library/Name`)
-4.  Open a pull request
+6. Create a new branch (`git checkout -b Library/Name`)
+7. Commit your changes (`git commit -m 'add this new library'`)
+8. Push to the branch (`git push origin Library/Name`)
+9. Open a pull request
