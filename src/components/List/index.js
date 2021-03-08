@@ -7,6 +7,7 @@ import ReactDataFetching from './ReactDataFetching';
 import Fetchers from './Fetchers';
 import Document from './Document';
 import Notes from './Notes';
+import Utility from './Utility';
 
 export {
   Framework,
@@ -18,4 +19,5 @@ export {
   Fetchers,
   Document,
   Notes,
+  Utility,
 };

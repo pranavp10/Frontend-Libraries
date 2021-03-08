@@ -7,6 +7,7 @@ import {
   Fetchers,
   Document,
   Notes,
+  Utility,
 } from './List';
 
 const Libraries = () => (
@@ -19,6 +20,7 @@ const Libraries = () => (
     <UiLibrary />
     <Document />
     <Notes />
+    <Utility />
   </div>
 );
 export default Libraries;
