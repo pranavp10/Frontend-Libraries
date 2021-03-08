@@ -1,7 +1,17 @@
 {
-  "name": "with-tailwindcss",
+  "name": "libraries.pranavp10.me",
   "version": "0.1.0",
-  "private": true,
+  "description": "Best Frontend Libraries which are used by professionals working at facebook, Google, Microsoft and many other top companies.",
+  "author": {
+    "name": "Pranav Patel",
+    "email": "pranavkp.me@outlook.com",
+    "url": "https://libraries.pranavp10.me/"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pranavp10/Frontend-Libraries.git"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
