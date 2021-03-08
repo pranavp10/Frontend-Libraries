@@ -1,21 +1,53 @@
-# Next.js + Tailwind CSS Example
+# Frontend Libraries
 
-This example shows how to use [Tailwind CSS](https://tailwindcss.com/) (v2) with Next.js. It follows the steps outlined in the official [Tailwind docs](https://tailwindcss.com/docs/guides/nextjs).
+Best Frontend Libraries which has been used by folks working at facebook,Google,Microsoft and may more.
 
-## Deploy your own
-
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example):
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/next.js/tree/canary/examples/with-tailwindcss&project-name=with-tailwindcss&repository-name=with-tailwindcss)
-
-## How to use
-
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init) or [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/) to bootstrap the example:
+## Running locally
 
 ```bash
-npx create-next-app --example with-tailwindcss with-tailwindcss-app
-# or
-yarn create next-app --example with-tailwindcss with-tailwindcss-app
+git clone https://github.com/pranavp10/Frontend-Libraries.git
+cd Frontend-Libraries
+yarn
+yarn dev
 ```
 
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
+## Built using
+
+- [Next.js](https://nextjs.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+
+## Deployed on
+
+- [Vercel](https://vercel.com)
+
+## Contributing
+
+Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+
+1. Fork the project
+2. Create your feature or bug branch (`git checkout -b feature/amazingFeature`) `or` (`git checkout -b bug/bugName`)
+3. Commit your changes (`git commit -m 'comment'`)
+4. Push to the branch (`git push origin feature/amazingFeature`) `or`(`git push origin bug/bugName`)
+5. Open a Pull Request
+
+### Adding new library
+
+1. Upload the icons to public/icons
+2. Navigate to the `/src/data`
+3. Select the section you want to add the libary
+4. Modify the below object
+
+5. ```js
+    {
+    githubLink: '',
+    website: '',
+    name: 'React',
+    path: 'icons/iconname.png',
+    tried: false, //don't modify this object
+    },
+    ```
+
+6. Create a new branch (`git checkout -b Library/Name`)
+7. Commit your changes (`git commit -m 'add this new library'`)
+8. Push to the branch (`git push origin Library/Name`)
+9. Open a pull request
