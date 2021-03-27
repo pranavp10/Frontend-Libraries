@@ -45,6 +45,7 @@ const Who = () => (
             rel="noopener noreferrer"
             href="https://www.linkedin.com/in/pranav-p-241914183">
             <AiFillLinkedin size="34px" />
+            <span class="sr-only">linkedin link</span>
           </a>
           <a
             target="_blank"
@@ -52,6 +53,7 @@ const Who = () => (
             href="https://twitter.com/thatspranav"
             className="text-blue-500 hover:text-blue-700">
             <AiOutlineTwitter size="34px" />
+            <span class="sr-only">twitter link</span>
           </a>
         </div>
       </div>
