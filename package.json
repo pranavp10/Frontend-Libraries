@@ -22,7 +22,7 @@
     "next": "latest",
     "next-seo": "^4.19.0",
     "next-themes": "^0.0.10",
-    "postcss": "^8.1.10",
+    "postcss": "^8.2.10",
     "preact": "^10.5.12",
     "prop-types": "^15.7.2",
     "react": "^17.0.1",
