@@ -32,7 +32,7 @@ const Card = ({ githubLink, website, name, path, tried }) => (
                 className="text-gray-500 dark:text-gray-400 hover:text-black dark:hover:text-white"
                 target="_blank"
                 rel="noopener noreferrer">
-                <span class="sr-only">github link</span>
+                <span className="sr-only">github link</span>
                 <AiFillGithub size="20px" />
               </a>
             )}
@@ -42,7 +42,7 @@ const Card = ({ githubLink, website, name, path, tried }) => (
                 className="text-gray-500 dark:text-gray-400 hover:text-black dark:hover:text-white"
                 target="_blank"
                 rel="noopener noreferrer">
-                <span class="sr-only">website link</span>
+                <span className="sr-only">website link</span>
                 <FiExternalLink size="20px" />
               </a>
             )}
