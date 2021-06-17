@@ -1,5 +1,5 @@
 module.exports = {
-  mode: 'jit',
+  // mode: 'jit',
   purge: ['./src/pages/**/*.js', './src/components/**/*.js', './src/utils/getTint.js'],
   future: {
     removeDeprecatedGapUtilities: true,

@@ -6,13 +6,13 @@ import { MdCancel } from 'react-icons/md';
 import Image from 'next/image';
 
 const Card = ({ githubLink, website, name, path, tried }) => (
-  <div className="flex flex-wrap justify-center">
-    <div className="m-2 p-2 border border-white w-full rounded-lg shadow-lg hover:shadow-xl transition duration-200 ease-in-out cursor-pointer transform hover:scale-105 motion-reduce:transform-none">
+  <div className="flex flex-wrap justify-center w-full">
+    <div className="m-2 p-2 border border-white rounded-lg shadow-lg hover:shadow-xl transition duration-200 ease-in-out cursor-pointer transform hover:scale-105 motion-reduce:transform-none w-full">
       <div className="items-center flex space-x-4">
         <Image className="rounded-full hover:p-2" src={`/${path}`} width={100} height={100} />
         <div className="flex flex-col space-y-1">
           <div className="flex justify-center items-center space-x-3">
-            <p className="text-3xl font-extrabold">{name}</p>
+            <p className="lg:text-3xl text-base font-extrabold">{name}</p>
             <div>
               {tried ? (
                 <div className="text-green-500 dark:text-green-400">

@@ -16,15 +16,10 @@
 }
 
 html {
-  min-width: 360px;
   scroll-behavior: smooth;
 }
 
-#__next {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
+
 
 input[type='text'], input[type='email'] {
   -webkit-appearance: none;
